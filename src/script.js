@@ -1,6 +1,4 @@
 function displayQuotes(response) {
-  console.log("quotes generated");
-
   new Typewriter("#quotes", {
     strings: response.data.answer,
     autoStart: true,
@@ -19,9 +17,6 @@ function generateQuotes(event) {
 1. "Quote text." - Attribution
 Ensure each quote is preceded by a number from 1 to 5 for consistency. These quotes should reflect various perspectives on ${instructionsInput.value}, ranging from personal philosophy to worldly wisdom. Sign every quote with proper attributions in bold inside a <strong> element at the end of the quote. Separate each quote with a <br /> <br /> for clarity.`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-  console.log("Generating quotes");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   let quotesElement = document.querySelector("#quotes");
   quotesElement.classList.remove("hidden");
