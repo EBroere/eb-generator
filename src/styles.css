@@ -1,10 +1,14 @@
 body {
-  background-color: #f9f7fe;
-  font-family: Helvetica, Arial, sans-serif;
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+  font-family: "Swanky and Moo Moo", cursive;
 }
 
 a {
-  color: #885df1;
+  color: #0e8187;
 }
 
 .container {
@@ -18,17 +22,18 @@ header {
 
 h1 {
   text-align: center;
+  color: #0e8187;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 50px;
   line-height: 1.5;
-  color: #272044;
 }
 
 .form-container {
   background-color: white;
   margin-bottom: 30px;
   border-radius: 10px;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.09);
+  opacity: 0.6;
   padding: 15px 20px;
 }
 
@@ -40,7 +45,7 @@ form {
   line-height: 1.5;
   margin-top: 5px;
   opacity: 0.6;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .instructions {
@@ -55,7 +60,7 @@ form {
 
 .submit-button {
   margin-left: 10px;
-  background: #885df1;
+  background: #0e8187;
   color: white;
   border: none;
   width: 150px;
@@ -69,21 +74,24 @@ form {
   background-color: #fff;
   padding: 20px;
   line-height: 2;
-  border-left: 3px solid #885df1;
+  border-left: 3px solid #0e8187;
+  padding-bottom: -5px;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
 .hidden {
   display: none;
+  opacity: 0.6;
 }
 
 .quotes strong {
-  color: #885df1;
+  color: #0e8187;
 }
 
 footer {
+  color: white;
   text-align: center;
-  font-size: 13px;
+  font-size: 16px;
   margin-top: 30px;
 }
 
